@@ -24,15 +24,11 @@
 
 ### 2.3 本地构建或预览
 
-在虚拟环境中安装依赖后执行 `python -m mkdocs build --strict` 与 `python -m mkdocs serve`，本地检查了四页导航、表格渲染、代码块高亮和页面之间的链接跳转。
-
-![本地构建](images/03-local-build.png)
+在虚拟环境中安装依赖后执行 `python -m mkdocs build --strict` 与 `python -m mkdocs serve`，本地检查了四页导航、表格渲染、代码块高亮和页面之间的链接跳转，构建输出为 `Documentation built in 1.44 seconds`，`site/` 目录正常生成。
 
 ### 2.4 Pages 设置
 
-Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**，不使用分支发布方式。
-
-![Pages 设置](images/04-pages-setting.png)
+Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**，不使用分支发布方式；随后在 Settings → Actions → General 确认仓库允许使用工作流中的 Actions。
 
 ### 2.5 Actions 首次构建和部署
 
